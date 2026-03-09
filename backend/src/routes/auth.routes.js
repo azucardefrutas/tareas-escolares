@@ -1,30 +1,13 @@
 const express = require('express');
 const router = express.Router();
+// Importamos el controlador que creamos arriba
+const authController = require('../controllers/auth.controller');
 
+// Definimos las rutas
+// Nota: Como en app.js ya usas app.use('/api/auth', ...), 
+// aquí solo necesitas poner '/register'
+router.post('/register', authController.register);
+router.post('/login', authController.login);
 
-// rutas se agregarán después
-
+// Exportamos el router al final
 module.exports = router;
-
-
-const pool = require('../config/db');
-exports.register = async (req, res) => {
-
-  const { nombre, correo, password } = req.body;
-  try {
-    const result = await pool.query(
-      'INSERT INTO usuarios (nombre, correo, password) VALUES ($1, $2, $3) RETURNING *',
-      [nombre, correo, password]
-    );
-
-    res.status(201).json(result.rows[0]);
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-};
-
-
-
-exports.login = async (req, res) => {
-  res.json({ message: 'Login pendiente (se implementa después)' });
-};

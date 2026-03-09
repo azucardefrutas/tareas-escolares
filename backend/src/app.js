@@ -1,9 +1,11 @@
-require('dotenv').config(); // 👈 SIEMPRE PRIMERO
+require('dotenv').config({ path: './.env' });
 
 console.log("DB_PASSWORD =", process.env.DB_PASSWORD);
 
+
 const express = require('express');
 const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
 
