@@ -28,7 +28,7 @@ librerias o herramientas usadas para la creacion de este proyecto
 |jsonwebtoken|9.0.3|Implementación de tokens para la autenticación y seguridad de rutas.|
 
 
-estructura de rutas
+#estructura de rutas
 |prefijo|recurso|descripcion|
 |---|---|---|
 |/api/ruth|autenticacion|login y registro de los usuarios|
