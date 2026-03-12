@@ -12,6 +12,7 @@ la tecnologia de Node.js y express
 
 
 #BACKEND
+
 librerias o herramientas usadas para la creacion de este proyecto 
 
 | Herramienta/libreria | version | Descripcion |
@@ -19,4 +20,9 @@ librerias o herramientas usadas para la creacion de este proyecto
 | Node.js | 20.11.x (LTS) | Entorno de ejecución para JavaScript en el servidor. |
 | Expres.js| ^4.18.2 | Framework minimalista para la creación de la API y manejo de rutas. |
 |NPM|10.2.x|Gestor de paquetes para instalar y administrar las dependencias|
-|Bycript| ^6.0.0               |una función de hashing de contraseñas basada en el algoritmo Blowfish, diseñada para ser lenta y resistente a ataques                 |##|##|##|
+|Bycript| ^6.0.0               |una función de hashing de contraseñas basada en el algoritmo Blowfish, diseñada para ser lenta y resistente a ataques              |postman|10.21|Herramienta para pruebas de endpoints y documentación técnica|
+|Dotenv|^17.3.1|Librería para la gestión de variables de entorno (seguridad de credenciales).|
+|CORS|2.8.6|Middleware para permitir peticiones desde diferentes dominios (Frontend).|
+|NODEMON|3.1.14|Herramienta de desarrollo para reiniciar el servidor automáticamente tras cambios.|
+|PG|8.18.0|Cliente de PostgreSQL para realizar consultas y persistencia de datos.|
+|jsonwebtoken|9.0.3|Implementación de tokens para la autenticación y seguridad de rutas.|
