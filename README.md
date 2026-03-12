@@ -13,7 +13,15 @@ la tecnologia de Node.js y express
 
 #BACKEND
 
-librerias o herramientas usadas para la creacion de este proyecto 
+## 📝 Descripción del Proyecto
+Este proyecto es una aplicación universitaria enfocada en la gestión de actividades académicas. Fue desarrollado como una práctica avanzada para el diseño, creación y consumo de APIs RESTful, utilizando el ecosistema de Node.js y Express.
+
+El sistema permite administrar ciclos escolares, materias, horarios y el seguimiento puntual de tareas pendientes.
+
+## 🛠️ Backend: Stack Tecnológico
+A continuación, se describen las herramientas y librerías fundamentales para que un desarrollador externo pueda replicar el entorno de ejecución.
+
+## ibrerias o herramientas usadas para la creacion de este proyecto 
 
 | Herramienta/libreria | version | Descripcion |
 |--- |--- |--- |
@@ -28,7 +36,8 @@ librerias o herramientas usadas para la creacion de este proyecto
 |jsonwebtoken|9.0.3|Implementación de tokens para la autenticación y seguridad de rutas.|
 
 
-#estructura de rutas
+## estructura de rutas
+
 |prefijo|recurso|descripcion|
 |---|---|---|
 |/api/ruth|autenticacion|login y registro de los usuarios|
@@ -36,3 +45,38 @@ librerias o herramientas usadas para la creacion de este proyecto
 |/api/materias|materias|CRUD de materias|
 |/api/tareas|materias|seguimiento de tareas|
 |/api/horarios|horarios|configuracion de los horarios|
+
+
+## configuracion del entorno
+
+### 1. prerequeistos
+- tener instalado **node.js**
+- una instancia en **PostgresSQL**
+
+### 2. instalacion de dependencias
+Ejecute el siguiente comando en la raiz del proyecto:
+``` bash
+npm install
+```
+### 3. variables de entonrno 
+cree un archivo `.env` en la raiz con el siguiente forma:
+```
+# Configuración del Servidor
+PORT=3000
+
+# Base de Datos (PostgreSQL)
+DB_USER=tu_usuario_postgres
+DB_PASSWORD=tu_contrasena_segura
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=tareas_escolares_db
+
+# Seguridad y Autenticación
+JWT_SECRET=una_llave_secreta_muy_larga_y_segura
+```
+### 4.ejecucion del desarrollo
+para iniciar el servidor con recarga automatica:
+```
+npm run dev
+```
+
