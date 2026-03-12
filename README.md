@@ -26,3 +26,13 @@ librerias o herramientas usadas para la creacion de este proyecto
 |NODEMON|3.1.14|Herramienta de desarrollo para reiniciar el servidor automáticamente tras cambios.|
 |PG|8.18.0|Cliente de PostgreSQL para realizar consultas y persistencia de datos.|
 |jsonwebtoken|9.0.3|Implementación de tokens para la autenticación y seguridad de rutas.|
+
+
+estructura de rutas
+|prefijo|recurso|descripcion|
+|---|---|---|
+|/api/ruth|autenticacion|login y registro de los usuarios|
+|/api/periodos|periodos|gestion de los ciclos academicos|
+|/api/materias|materias|CRUD de materias|
+|/api/tareas|materias|seguimiento de tareas|
+|/api/horarios|horarios|configuracion de los horarios|
