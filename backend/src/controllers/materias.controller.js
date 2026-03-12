@@ -9,7 +9,7 @@ exports.crearMateria = async (req, res) => {
   const { nombre, profesor, id_periodo } = req.body;
   const id_usuario = req.usuario.id_usuario;
 
-  if (!nombre || !id_periodo) {
+  if (!nombre || !id_periodo) { 
     return res.status(400).json({
       error: 'Nombre e id_periodo son obligatorios'
     });
