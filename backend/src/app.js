@@ -1,11 +1,6 @@
-require('dotenv').config({ path: './.env' });
-
-console.log("DB_PASSWORD =", process.env.DB_PASSWORD);
-
-
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config();
 
 const app = express();
 
@@ -13,11 +8,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Rutas
+// Rutas (Asegúrate de que los archivos existan en la carpeta routes)
 app.use('/api/auth', require('./routes/auth.routes'));
 app.use('/api/periodos', require('./routes/periodos.routes'));
 app.use('/api/materias', require('./routes/materias.routes'));
 app.use('/api/horarios', require('./routes/horarios.routes'));
 app.use('/api/tareas', require('./routes/tareas.routes'));
 
+// EXPORTAR AL FINAL
 module.exports = app;
