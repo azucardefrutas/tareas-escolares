@@ -8,7 +8,7 @@ la tecnologia de Node.js y express
 **fecha**: 09-feb-2026
 **autor**: juan antonio 
 
-**universidad politecnica de bacalar**
+## universidad politecnica de bacalar
 
 
 #BACKEND
@@ -80,3 +80,7 @@ para iniciar el servidor con recarga automatica:
 npm run dev
 ```
 
+> [NOTE]
+> Universidad Politecnica de Bacalar
+> Juan Antonio Huh Puc
+> 12 de marzo del 2026
