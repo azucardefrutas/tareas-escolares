@@ -16,5 +16,6 @@ librerias o herramientas usadas para la creacion de este proyecto
 
 | Herramienta/libreria | version | Descripcion |
 |--- |--- |--- |
-| row 1 | column 2 | column 3 |
-| row 2 | row 2 column 2 | row 2 column 3 |
+| Node.js | 20.11.x (LTS) | Entorno de ejecución para JavaScript en el servidor. |
+| Expres.js| ^4.18.2 | row 2 column 3 |
+|Bycript|                 |                 |
